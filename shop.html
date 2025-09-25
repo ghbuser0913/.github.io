@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Voltage NoticeMe-NEWS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Voltage NoticeMe公式">
+
+<style>
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f8f8f8;
+  color: #333;
+}
+
+header {
+  background: #000;
+  padding: 15px;
+  text-align: center;
+}
+
+#logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+h2 {
+  text-align: center;
+  margin: 30px 0;
+}
+
+/* 商品カード一覧 */
+.list-normal {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 常に2列 */
+  gap: 70px;  /* カード同士の間隔 */
+  padding: 30px;
+  max-width: 1000px;   /* 横幅制限 */
+  margin: 0 auto;      /* 中央寄せ */
+}
+
+.list {
+  background: #fff;
+  text-decoration: none;
+  border: 1px solid red; /* 赤い細線 */
+  border-radius: 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  padding: 0;
+}
+
+.list:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.list figure {
+  margin: 0;
+}
+
+.list figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.list:hover figure img {
+  transform: scale(1.1);
+}
+
+.list .text {
+  padding: 15px;
+  text-align: center;
+}
+
+.list .text h4 {
+  font-size: 19px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  text-align: left;
+  margin: 10px 15px 5px 15px;
+}
+
+.list .text p {
+  font-size: 16px;
+  font-weight: bold;
+  color: red;
+  text-align: left;
+  margin: 10px 15px 5px 15px;
+}
+
+.list .text a img {
+  width: 40px;
+  height: 40px;
+  margin: 0 5px;
+  vertical-align: middle;
+}
+
+/* フッター */
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.sns-links {
+  margin-bottom: 10px;
+}
+
+.sns-links img {
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+}
+
+/* ページトップボタン */
+.pagetop {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+
+.pagetop a {
+  display: block;
+  background: #333;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+/* スマホでも2列維持して見やすくする */
+@media screen and (max-width: 480px) {
+  .list-normal {
+    gap: 15px;      /* 間隔を狭める */
+    padding: 10px;  /* 余白も縮小 */
+  }
+
+  .list .text h4 {
+    font-size: 16px;
+  }
+
+  .list .text p {
+    font-size: 13px;
+  }
+
+  header {
+    padding: 10px;
+  }
+
+  #logo a {
+    font-size: 20px;
+  }
+
+  footer {
+    padding: 15px 0;
+    font-size: 14px;
+  }
+
+  .sns-links img {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div id="container">
+
+<header>
+  <h1 id="logo"><a href="index.html">VFM</a></h1>
+</header>
+
+<div id="contents">
+
+<main>
+<section>
+<h2>Voltage NoticeMe-NEWS</h2>
+
+<div class="list-normal">
+
+<a href="https://www.youtube.com/live/jyyYyzGlSuU?si=Q-ULHpZnYA4x2sGT" class="list">
+  <figure><img src="images/fh.jpg" alt=""></figure>
+  <div class="text">
+    <p>2025/9/17</p>
+    <h4>【第二回 / カスタムマッチ開催のお知らせ】</h4>
+  </div>
+</a>
+
+<a href="service.html" class="list">
+  <figure><img src="images/1C552630-8825-4994-9CE0-EA87D86D2CFD.jpg" alt=""></figure>
+  <div class="text">
+    <p>2025/9/17</p>
+    <h4>【新メンバー / メンバー加入のお知らせ】</h4>
+  </div>
+</a>
+
+<a href="https://www.youtube.com/live/0M3uJ4jYDm8?si=2LIGNGZi8bB3kZWW" class="list">
+  <figure><img src="images/1C552630-8825-4994-9CE0-EA87D86D2CFD.jpg" alt=""></figure>
+  <div class="text">
+    <p>2025/9/16</p>
+    <h4>【新チーム設立 / オーナー就任のお知らせ】</h4>
+  </div>
+</a>
+
+<a href="https://youtu.be/ADAW8-Vjgqs?si=s8SRCCASIeVVTWT5" class="list">
+  <figure><img src="images/B9882465-61E4-4843-AFD2-AB18FD18233D.jpg" alt=""></figure>
+  <div class="text">
+    <p>2025/3/9</p>
+    <h4>【第一回 / カスタムマッチ開催のお知らせ】</h4>
+  </div>
+</a>
+
+</div>
+</section>
+</main>
+
+</div>
+
+<footer>
+  <div>
+    <small>Copyright &copy; <a href="index.html">Voltage NoticeMe</a></small><br>
+    <span class="pr"><a href="" target="_blank">《Web Design:Template-Party》</a></span>
+  </div>
+</footer>
+
+</div>
+
+<div class="pagetop"><a href="#">▲</a></div>
+
+</body>
+</html>
